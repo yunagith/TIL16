@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>setInterval() 연습문제</title>
+		<script type="text/javascript">
+			// 이미지 출력 개수 세는 변수
+			let count = 0;
+	
+			// start() 함수
+			// alert()
+			// 타이머 설정
+			function start(){
+				alert("이미지 10개 출력");
+				timerID=setInterval("showImg()",1000);
+			}
+			
+			//showImg()()
+			// 카운트 증가
+			// 이미지 출력 : document.body.innerHTML += "<img....>";
+			// apple bomb ...: 짝수/홀수
+			// 10이면 타이머 해제
+			function showImg() {
+				count++;
+				
+				if(count%2==1)
+					 document.body.innerHTML += "<img src='image/apple.png'/>";
+				 else
+					 document.body.innerHTML += "<img src='image/bomb.png'/>";
+				
+					 if(count==10){
+						 clearInterval(timerID);
+					 }
+				}
+			
+			
+			
+
+		</script>
+	</head>
+	<body onLoad="start()">
+
+	</body>
+</html>

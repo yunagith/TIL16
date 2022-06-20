@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>이벤트 처리 : 인라인 방식</title>
+		<script type="text/javascript">
+			function view(){
+				alert("view : 클릭했습니다");
+			}
+		</script>
+	</head>
+	<body>
+	<!-- 이벤트 핸들러 onClick : 대소문자 상관없음 -->
+		<div onClick="alert('클릭했습니다-alert')">클릭</div>
+		<div onclick="view()">클릭</div>
+	</body>
+</html>
